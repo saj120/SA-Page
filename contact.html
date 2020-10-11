@@ -1,54 +1,51 @@
 <!Doctype html>
 <html>
   <head>
-    <title>Samuel Arriaga, MBA</title>
+    <title>Samuel Arriaga</title>
     <link rel="stylesheet" href="/css/contact.css">
   </head>
     
   <body>
-    <div class="contact-nav">
+    <div class="top-nav">
         <ul class="nav">
         <li><a href="index.html">Home</a></li>
         <li><a href="https://github.com/saj120?tab=projects" target="_blank">Portfolio</a></li>
-        <li><a href="resume.html">Resume</a></li>
+        <li><a href="resume.html">Experience</a></li>
     </div>
     
     <header>
         <img src="/assets/profile-pic.jpg" alt="picture of Samuel at Hyatt" class="contact-image">
-        <h1 class="tag">Sam Arriaga</h1>
+        <h1 class="tag-name">Sam Arriaga</h1>
     </header>
 
     <section id="middle">    
         <p>Submit your email for quality web development quotes. Our team will provide a fair and quick response.</p>
     </section>
 
-    <div id="form">
-        <fieldset id="custinfo">
-        <legend>Contact Information</legend>  
-
-        <label for="custname">Name *</label>
-        <input name="custname" id="custname" placeholder="First, Last"/>
-
-        <label for="email">E-mail *</label>
-        <input name="email" id="email" placeholder="email@info.com"/>
-
-        <label for="phone">Phone *</label>
-        <input name="phone" id="phone" placeholder="(000)111-2222"/>
-
-        <label for="zip">Postal Code *</label>
-        <input name="zip" id="zip" placeholder="12345-0000"/>
+    <div class="container">  
+      <form id="contact" action="" method="post">
+        <h3>Quick Contact</h3>
+        <h4>Contact us today, and get reply with in 24 hours!</h4>
+        <fieldset>
+          <input placeholder="Your name" type="text" tabindex="1" required autofocus>
         </fieldset>
-
-        <fieldset id="comments">
-        <legend>Comments</legend>  
-
-        <label for="comments">Describe work required *</label>
-        <textarea name="comments" id="comments" placeholder="Tell us what you have in mind for this project!"></textarea>
+        <fieldset>
+          <input placeholder="Your Email Address" type="email" tabindex="2" required>
         </fieldset>
-    
-        <input type="email" placeholder="Your email">
-        <input type="submit">
-    </div>
+        <fieldset>
+          <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
+        </fieldset>
+        <fieldset>
+          <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
+        </fieldset>
+        <fieldset>
+          <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+        </fieldset>
+        <fieldset>
+          <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+        </fieldset>
+      </form>
+      </div>
     
     <footer>
 
@@ -56,9 +53,3 @@
 </body>
 </html>
     
-    <!-- <div id="form">    
-      <input type="email" placeholder="Your email">
-      <input type="submit">
-    </div>
-    
-    </html> -->
